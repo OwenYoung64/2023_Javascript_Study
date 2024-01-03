@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calc1</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+
+    <div class="row">
+        <div class="col">
+            <button id="btn1" value="check">1</button>
+            <button id="btn2" value="check">2</button>
+            <button id="btn3" value="check">3</button>
+            <button id="btn4" value="check">4</button>
+            <button id="btn5" value="check">5</button>
+            <button id="btn6" value="check">6</button>
+            <button id="btn7" value="check">7</button>
+            <button id="btn8" value="check">8</button>
+            <button id="btn9" value="check">9</button>
+            <button id="btn0" value="check">0</button>
+        </div>
+        <div class="col">
+            <button id="btn1" value="check">1</button>
+            <button id="btn2" value="check">2</button>
+            <button id="btn3" value="check">3</button>
+            <button id="btn4" value="check">4</button>
+            <button id="btn5" value="check">5</button>
+            <button id="btn6" value="check">6</button>
+            <button id="btn7" value="check">7</button>
+            <button id="btn8" value="check">8</button>
+            <button id="btn9" value="check">9</button>
+            <button id="btn0" value="check">0</button>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    /*
+        Part 1: Add a click event to both text boxes that links to a method "changeBG" that changes the
+        background color of the text box to green.
+    */
+
+
+    const btn1 = document.getElementById("btn1");
+    const btn2 = document.getElementById("btn2");
+    const btn3 = document.getElementById("btn3");
+    const btn4 = document.getElementById("btn4");
+    const btn5 = document.getElementById("btn5");
+    const btn6 = document.getElementById("btn6");
+    const btn7 = document.getElementById("btn7");
+    const btn8 = document.getElementById("btn8");
+    const btn9 = document.getElementById("btn9");
+    const btn0 = document.getElementById("btn0");
+
+
+    btn1.addEventListener("click", sum);
+    btn2.addEventListener("click", sum);
+    btn3.addEventListener("click", sum);
+    btn4.addEventListener("click", sum);
+    btn5.addEventListener("click", sum);
+    btn6.addEventListener("click", sum);
+    btn7.addEventListener("click", sum);
+    btn8.addEventListener("click", sum);
+    btn9.addEventListener("click", sum);
+    btn0.addEventListener("click", sum);
+
+    /*
+        Part 2: Write the function that changes their background color here.
+     */
+
+    function changeBG(){
+        event.target.style.backgroundColor = "green";
+    }
+
+    function sum(){
+        var evaluation = "";
+        evaluation += text1.value;
+        evaluation += " + ";
+        evaluation += text2.value;
+        alert(eval(evaluation));
+    }
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
